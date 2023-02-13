@@ -1,0 +1,194 @@
+@media screen and (max-width: 1440px) {
+    .directions
+    {
+        bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .table
+    {
+        width: 85%;
+    }
+
+    .user-last-online p:first-child
+    {
+        display: none;
+    }
+
+    .user-last-online p:last-child
+    {
+        display: block;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .user-main p:nth-child(3)
+    {
+        display: none;
+    }
+
+    .user-main p:last-child
+    {
+        display: block;
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .table
+    {
+        width: 90%;
+    }
+
+    .search-panel img
+    {
+        width: 17px;
+        height: 17px;
+        left: 16px;
+    }
+
+    .search-panel input
+    {
+        font-size: 13px;
+        line-height: 25px;
+        height: 60px;
+        padding: 0 45px;
+    }
+
+    .search-panel input::placeholder
+    {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .search-panel button
+    {
+        width: 84px;
+        height: 46px;
+        font-size: 14px;
+        line-height: 21px;
+        right: 8px;
+    }
+
+    .line
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .directions
+    {
+        flex-direction: column;
+    }
+
+    .info
+    {
+        height: max-content;
+        margin-top: 33px;
+    }
+
+    .info-top
+    {
+        flex-direction: column;
+    }
+
+    .user-statistics
+    {
+        width: 100%;
+        float: none;
+        position: relative;
+        max-width: 279px;
+        height: 85px;
+    }
+
+    .item
+    {
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .line
+    {
+        gap: 0;
+        justify-content: flex-start;
+    }
+
+    .user-last-online p:first-child
+    {
+        display: none;
+    }
+
+    .user-last-online p:last-child
+    {
+        display: block;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .user-main p:nth-child(3)
+    {
+        display: none;
+    }
+
+    .user-main p:last-child
+    {
+        display: block;
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .user-image img
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    .user-main h2
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .user-main a
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .user-main
+    {
+        margin-top: -10px;
+    }
+
+    .user-statistics
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .user-statistics .title
+    {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .repos,
+    .followers,
+    .following
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .directions
+    {
+        float: left;
+    }
+    .search-error
+    {
+        font-size: 10px;
+        line-height: 15px;
+        display: none;
+    }
+}

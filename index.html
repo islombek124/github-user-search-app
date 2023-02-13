@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github user search app</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="https://github.githubassets.com/favicons/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
+    <div class="table">
+      <header>
+        <div class="logo">
+          <h1>devfinder</h1>
+        </div>
+        <div class="mode">DARK <ion-icon name="moon"></ion-icon></div>
+      </header>
+      <div class="search-bar">
+        <div class="search-panel">
+          <img src="./icons/search.svg" alt="search" /><input
+            type="text"
+            autocapitalize="off"
+            autocomplete="off"
+            placeholder="Search GitHub username…"
+          /><button>Search</button>
+        </div>
+      </div>
+      <div class="info"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url(../fonts/SpaceMono/SpaceMono-Regular.ttf),
+        url(../fonts/SpaceMono/SpaceMono-Bold.ttf);
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family: "Space Mono";
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
+}
+
+li
+{
+    list-style: none;
+}
+
+svg
+{
+    cursor: pointer;
+}
+
+button
+{
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover
+{
+    opacity: 70%;
+}
+
+.table
+{
+    width: 60%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    transition: all 0.5s ease 0s;
+}
+
+.table.active
+{
+    height: 600px;
+    transform: translateY(0%);
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo h1 
+{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    user-select: none;
+}
+
+.mode
+{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 2.5px;
+    color: #697C9A;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mode:hover
+{
+    color: var(--hover-color);
+}
+
+.mode ion-icon
+{
+    width: 20px;
+    height: 20px;
+}
+
+.mode:hover ion-icon
+{
+    color: var(--hover-color);
+}
+
+.search-bar
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.search-panel input
+{
+    width: 100%;
+    background-color: var(--background2-color);
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+    height: 69px;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--more-info-colors);
+    padding: 0 80px;
+}
+
+.search-panel input::placeholder
+{
+    color: var(--more-info-colors);
+}
+
+.search-panel
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.search-panel img
+{
+    position: absolute;
+    left: 32px;
+}
+
+.search-panel button
+{
+    background-color: #0079FF;
+    border-radius: 10px;
+    width: 106px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 10px;
+}
+
+.info
+{
+    width: 100%;
+    background-color: var(--background2-color);
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+    height: 430px;
+    padding: 48px;
+    display: none;
+}
+
+.info.active
+{
+    display: block;
+}
+
+.info-top
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.user-main-info
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 37px;
+}
+
+.user-main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.user-image img
+{
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-main h2
+{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    color: var(--user-color);
+}
+
+.user-main p
+{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--more-info-colors);
+    opacity: 0.75;
+}
+
+.user-main p:last-child
+{
+    display: none;
+}
+
+.user-main a
+{
+    color: var(--user-address);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.user-last-online p:last-child
+{
+    display: none;
+}
+
+.user-last-online p
+{
+    color: var(--more-info2-color);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+.user-statistics
+{
+    height: 85px;
+    background-color: var(--statistic-color);
+    border-radius: 10px;
+    display: flex;
+    width: 81%;
+    padding: 0 32px;
+    justify-content: space-around;
+    float: right;
+}
+
+.repos,
+.followers,
+.following
+{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--user-color);
+    text-align: center;
+}
+
+.title
+{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: var(--more-info-colors);
+    text-align: center;
+}
+
+
+
+.directions
+{
+    width: 81%;
+    display: flex;
+    float: right;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 5px;
+}
+
+.line
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item
+{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-top: 10px;
+}
+
+.line__bottom .item:first-child
+{
+    position: relative;
+    top: 13px;
+}
+
+.directions .item p,a
+{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--more-info-colors);
+    text-decoration: none;
+}
+
+.loader_bg
+{
+    position: fixed;
+    z-index: 999999;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader
+{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader::before, .loader::after
+{
+    content: '';
+    position: absolute;
+    border: 1em solid var(--user-address);
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader::before
+{
+    animation-delay: .5s;
+}
+
+@keyframes loader
+{
+    0%
+    {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark .logo h1
+{
+    color: var(--user-color);
+}
+
+.dark .mode
+{
+    color: var(--user-color);
+}

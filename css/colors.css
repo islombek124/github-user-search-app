@@ -1,0 +1,22 @@
+:root
+{
+    --background-color: #F6F8FF;
+    --user-color: #2B3442;
+    --more-info-colors: #4B6A9B;
+    --background2-color: #FEFEFE;
+    --more-info2-color: #697C9A;
+    --user-address: #0079FF;
+    --statistic-color: #F6F8FF;
+    --hover-color: #222731;
+}
+
+.dark
+{
+    --background-color: #141D2F;
+    --user-color: #FFFFFF;
+    --more-info-colors: #FFFFFF;
+    --background2-color: #1E2A47;
+    --more-info2-color: #FFFFFF;
+    --statistic-color: #141D2F;
+    --hover-color: #90A4D4;
+}
